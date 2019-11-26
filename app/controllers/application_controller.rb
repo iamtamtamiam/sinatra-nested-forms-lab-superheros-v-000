@@ -12,7 +12,7 @@ class App < Sinatra::Base
     @team = Team.new(params[:team])
     
     params[:team][:members].each do |member|
-      Member.new(args)
+      Member.new(arg)
     end
     
     @members = Members.all
